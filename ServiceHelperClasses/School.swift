@@ -9,9 +9,6 @@
 
 import Foundation
 
-
-
-
 struct School: Codable {
     let schoolCode: String
     let url: String

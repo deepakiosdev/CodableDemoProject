@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		12231D3320F2096F008BB7F6 /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 12231D3220F2096F008BB7F6 /* Readme.md */; };
+		12231D3520F25445008BB7F6 /* DogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12231D3420F25445008BB7F6 /* DogVC.swift */; };
+		12231D3720F2550A008BB7F6 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12231D3620F2550A008BB7F6 /* Dog.swift */; };
+		12231D3920F2839E008BB7F6 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12231D3820F2839E008BB7F6 /* HomeVC.swift */; };
+		12231D3B20F29158008BB7F6 /* DogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12231D3A20F29158008BB7F6 /* DogCell.swift */; };
 		C94812A820BFAB1D007A7837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94812A720BFAB1D007A7837 /* AppDelegate.swift */; };
 		C94812AD20BFAB1D007A7837 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C94812AB20BFAB1D007A7837 /* Main.storyboard */; };
 		C94812B220BFAB1E007A7837 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94812B120BFAB1E007A7837 /* Assets.xcassets */; };
@@ -15,12 +19,15 @@
 		C94812C720BFACE4007A7837 /* School.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94812C520BFACE4007A7837 /* School.swift */; };
 		C94812C820BFACE4007A7837 /* RestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94812C620BFACE4007A7837 /* RestClient.swift */; };
 		C94812CA20BFAE9F007A7837 /* SchoolDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94812C920BFAE9F007A7837 /* SchoolDataViewController.swift */; };
-		C94812CE20BFAFF8007A7837 /* EnumClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94812CD20BFAFF8007A7837 /* EnumClass.swift */; };
 		C948130020C02806007A7837 /* SchoolDataTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94812FF20C02806007A7837 /* SchoolDataTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12231D3220F2096F008BB7F6 /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		12231D3420F25445008BB7F6 /* DogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogVC.swift; sourceTree = "<group>"; };
+		12231D3620F2550A008BB7F6 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		12231D3820F2839E008BB7F6 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeVC.swift; path = ViewController/HomeVC.swift; sourceTree = SOURCE_ROOT; };
+		12231D3A20F29158008BB7F6 /* DogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCell.swift; sourceTree = "<group>"; };
 		C94812A420BFAB1D007A7837 /* CodableDemoProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodableDemoProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C94812A720BFAB1D007A7837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C94812AC20BFAB1D007A7837 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -30,7 +37,6 @@
 		C94812C520BFACE4007A7837 /* School.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = School.swift; sourceTree = "<group>"; };
 		C94812C620BFACE4007A7837 /* RestClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestClient.swift; sourceTree = "<group>"; };
 		C94812C920BFAE9F007A7837 /* SchoolDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataViewController.swift; sourceTree = "<group>"; };
-		C94812CD20BFAFF8007A7837 /* EnumClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnumClass.swift; sourceTree = "<group>"; };
 		C94812FF20C02806007A7837 /* SchoolDataTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDataTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +87,8 @@
 			isa = PBXGroup;
 			children = (
 				C94812C920BFAE9F007A7837 /* SchoolDataViewController.swift */,
+				12231D3820F2839E008BB7F6 /* HomeVC.swift */,
+				12231D3420F25445008BB7F6 /* DogVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -90,7 +98,7 @@
 			children = (
 				C94812C520BFACE4007A7837 /* School.swift */,
 				C94812C620BFACE4007A7837 /* RestClient.swift */,
-				C94812CD20BFAFF8007A7837 /* EnumClass.swift */,
+				12231D3620F2550A008BB7F6 /* Dog.swift */,
 			);
 			path = ServiceHelperClasses;
 			sourceTree = "<group>";
@@ -99,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C94812FF20C02806007A7837 /* SchoolDataTableCell.swift */,
+				12231D3A20F29158008BB7F6 /* DogCell.swift */,
 			);
 			path = TableViewCell;
 			sourceTree = "<group>";
@@ -176,11 +185,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C94812A820BFAB1D007A7837 /* AppDelegate.swift in Sources */,
-				C94812CE20BFAFF8007A7837 /* EnumClass.swift in Sources */,
+				12231D3920F2839E008BB7F6 /* HomeVC.swift in Sources */,
+				12231D3B20F29158008BB7F6 /* DogCell.swift in Sources */,
 				C94812C820BFACE4007A7837 /* RestClient.swift in Sources */,
 				C94812CA20BFAE9F007A7837 /* SchoolDataViewController.swift in Sources */,
 				C948130020C02806007A7837 /* SchoolDataTableCell.swift in Sources */,
 				C94812C720BFACE4007A7837 /* School.swift in Sources */,
+				12231D3720F2550A008BB7F6 /* Dog.swift in Sources */,
+				12231D3520F25445008BB7F6 /* DogVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

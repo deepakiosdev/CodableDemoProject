@@ -19,9 +19,6 @@ class SchoolDataViewController: UIViewController, UITableViewDataSource, UITable
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.title = "School data"
-        self.navigationController?.navigationItem.hidesBackButton = true
         getSchoolsData()
         downloadImage()
     }

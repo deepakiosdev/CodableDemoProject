@@ -8,12 +8,9 @@
 
 
 import Foundation
-import UIKit
 
 struct RestClient {
     
-    let imageCache = NSCache<NSString, UIImage>()
-
     enum Response<Value> {
         case success(Value)
         case failure(Error)
@@ -74,6 +71,38 @@ struct RestClient {
             }
             }.resume()
     }
+    
+    
+    //////Format 2: Dogs Data////////////////
+    
+    static func getDogsData(url: String, completion: ((Response<Dog>) -> Void)?) {
+        
+        let url = URL.init(string: url)
+        var request = URLRequest(url: url!)
+        request.httpMethod = "GET"
+        
+        let config = URLSessionConfiguration.default
+        let session = URLSession(configuration: config)
+        let task = session.dataTask(with: request) { (responseData, response, responseError) in
+            if let error = responseError {
+                completion?(.failure(error))
+            } else if let jsonData = responseData {
+                let decoder = JSONDecoder()
+                do {
+                    let dogs = try decoder.decode(Dog.self, from: jsonData)
+                    completion?(.success(dogs))
+                } catch {
+                    completion?(.failure(error))
+                }
+            } else {
+                let error = NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey : "Data was not retrieved from request"]) as Error
+                completion?(.failure(error))
+            }
+        }
+        
+        task.resume()
+    }
+    
     
 }
 
